@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_play">
+
+    <fragment
+        android:id="@+id/navigation_play"
+        android:name="com.skyme32.randomdominion.ui.home.HomeFragment"
+        android:label="@string/title_tab_play"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_play_to_navigation_category"
+            app:destination="@id/navigation_category"
+            app:popUpTo="@+id/navigation_category" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_category"
+        android:name="com.skyme32.randomdominion.ui.dashboard.DashboardFragment"
+        android:label="@string/title_tab_cat"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_category_to_navigation_all"
+            app:destination="@id/navigation_all"
+            app:popUpTo="@+id/navigation_all" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_all"
+        android:name="com.skyme32.randomdominion.ui.notifications.NotificationsFragment"
+        android:label="@string/title_tab_all"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
