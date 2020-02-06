@@ -3,6 +3,7 @@ package com.skyme32.randomdominion.ui.home
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.SystemClock
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -22,6 +23,7 @@ class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private val CARD_ID = "CARD_ID"
+    private var mLastClickTime: Long = 0
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
@@ -34,14 +36,23 @@ class HomeFragment : Fragment() {
             Log.d("listview", "Size: " + it.count())
             Log.d("listview", "Cards: $it")
 
+
             val adapter = AdapterCustom(root.context, it)
             listView.adapter = adapter
             listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
-                newIntent(view.context, it[position])
-                Log.d("listview", "Cards: $parent $id")
+
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                }else {
+                    newIntent(this.context, it[position])
+                }
+
+                mLastClickTime = SystemClock.elapsedRealtime()
+                Log.d("listview5", "Parent: $parent")
+                Log.d("listview5", "Id: $id")
+                Log.d("listview5", "View: $view")
+                Log.d("listview5", "Card: " + it[position])
             }
         })
-
 
         return root
     }

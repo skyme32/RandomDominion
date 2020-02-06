@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_play"
         android:name="com.skyme32.randomdominion.ui.home.HomeFragment"
-        android:label="@string/title_tab_play"
+        android:label="@string/title_toolbar_play"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_navigation_play_to_navigation_category"
@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/navigation_category"
         android:name="com.skyme32.randomdominion.ui.dashboard.DashboardFragment"
-        android:label="@string/title_tab_cat"
+        android:label="@string/title_toolbar_cat"
         tools:layout="@layout/fragment_dashboard" >
         <action
             android:id="@+id/action_navigation_category_to_navigation_all"
@@ -30,6 +30,6 @@
     <fragment
         android:id="@+id/navigation_all"
         android:name="com.skyme32.randomdominion.ui.notifications.NotificationsFragment"
-        android:label="@string/title_tab_all"
+        android:label="@string/title_toolbar_all"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

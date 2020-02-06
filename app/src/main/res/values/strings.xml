@@ -10,9 +10,14 @@
     <string name="error_expansion">ERROR: No has puesto ninguna Expansión</string>
 
     //TABS Bottom home
-    <string name="title_tab_all">All Cards</string>
-    <string name="title_tab_cat">Category Cards</string>
-    <string name="title_tab_play">Playing Cards</string>
+    <string name="title_tab_all">Cards</string>
+    <string name="title_tab_cat">Category</string>
+    <string name="title_tab_play">Playing</string>
+
+    //TABS Bottom home
+    <string name="title_toolbar_all">All Cards</string>
+    <string name="title_toolbar_cat">Category Cards</string>
+    <string name="title_toolbar_play">Playing Cards</string>
 
     //settings
     <string name="action_settings">Configuración</string>
@@ -24,6 +29,7 @@
     //Headers
     <string name="header_general">General</string>
     <string name="header_advanced">Advanzado</string>
+    <string name="search">Buscar</string>
 
     //Dialog
     <string name="yes">Si</string>
@@ -97,5 +103,21 @@
     <string name="pref_ringtone_silent">Silent</string>
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_switch">Canviar vista</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>

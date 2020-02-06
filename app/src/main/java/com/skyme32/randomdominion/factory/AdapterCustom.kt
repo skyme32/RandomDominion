@@ -20,7 +20,7 @@ class AdapterCustom(var context: Context, items: ArrayList<Card>) : BaseAdapter(
 
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        var holder:ViewHolder? = null
+        var holder:ViewHolder?
         var view:View? = convertView
 
         // See if the view have a information or NOT

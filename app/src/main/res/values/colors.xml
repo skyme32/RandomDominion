@@ -2,9 +2,10 @@
 <resources>
     <item name="colorPrimary" type="color">#393D60</item>
     <item name="colorPrimaryDark" type="color">#2d3158</item>
-    <item name="colorAccent" type="color">#383b59</item>
+    <item name="colorAccent" type="color">#009688</item>
     <item name="active" type="color">#FFFFFF</item>
     <item name="inActive" type="color">#C7C6C6</item>
     <item name="actBackgroung" type="color">#8BC34A</item>
     <item name="actBackAtack" type="color">#EF5350</item>
+    <item name="actBackReac" type="color">#5F9AB8</item>
 </resources>
