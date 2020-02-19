@@ -7,7 +7,10 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.navOptions
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
@@ -33,10 +36,11 @@ class MainActivity : AppCompatActivity() {
         // Create all instance of records
         allCcards = onInstanceAll()
 
-
         // Create all navigataion and actionbar
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
+
+
         val toolbar: Toolbar = findViewById(R.id.toolbar2)
         toolbar.setTitleTextAppearance(this,R.style.TextTitleApp)
         setSupportActionBar(toolbar)

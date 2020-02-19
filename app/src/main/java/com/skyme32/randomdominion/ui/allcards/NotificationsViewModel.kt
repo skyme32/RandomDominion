@@ -1,11 +1,10 @@
-package com.skyme32.randomdominion.ui.notifications
+package com.skyme32.randomdominion.ui.allcards
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.skyme32.randomdominion.MainActivity
 import com.skyme32.randomdominion.bean.Card
-import com.skyme32.randomdominion.factory.RandomCards
 
 class NotificationsViewModel : ViewModel() {
 

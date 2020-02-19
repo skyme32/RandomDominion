@@ -1,30 +1,28 @@
-package com.skyme32.randomdominion.ui.notifications
+package com.skyme32.randomdominion.ui.allcards
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.AdapterView
 import android.widget.ListView
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.skyme32.randomdominion.R
 import com.skyme32.randomdominion.ScrollingActivity
+import com.skyme32.randomdominion.SettingsActivity
 import com.skyme32.randomdominion.bean.Card
 import com.skyme32.randomdominion.factory.AdapterCustom
-import com.skyme32.randomdominion.ui.home.HomeViewModel
 
-class NotificationsFragment : Fragment() {
+class AllCardsFragment : Fragment() {
 
     private lateinit var notificationsViewModel: NotificationsViewModel
     private val CARD_ID = "CARD_ID"
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        setHasOptionsMenu(true)
 
         notificationsViewModel = ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
@@ -43,6 +41,21 @@ class NotificationsFragment : Fragment() {
         })
 
         return root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_overflow, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_settings ->{
+                val intent = Intent(context, SettingsActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun newIntent(context: Context?, card: Card) {

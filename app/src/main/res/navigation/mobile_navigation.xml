@@ -8,28 +8,49 @@
     <fragment
         android:id="@+id/navigation_play"
         android:name="com.skyme32.randomdominion.ui.home.HomeFragment"
-        android:label="@string/title_toolbar_play"
-        tools:layout="@layout/fragment_home" >
+        android:label="@string/title_toolbar_play">
         <action
             android:id="@+id/action_navigation_play_to_navigation_category"
             app:destination="@id/navigation_category"
-            app:popUpTo="@+id/navigation_category" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_navigation_play_to_navigation_all"
-            app:destination="@id/navigation_all" />
+            app:destination="@id/navigation_all"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
 
     <fragment
         android:id="@+id/navigation_category"
         android:name="com.skyme32.randomdominion.ui.dashboard.DashboardFragment"
         android:label="@string/title_toolbar_cat"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_category_to_navigation_all"
+            app:destination="@id/navigation_all"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_all"
-        android:name="com.skyme32.randomdominion.ui.notifications.NotificationsFragment"
+        android:name="com.skyme32.randomdominion.ui.allcards.AllCardsFragment"
         android:label="@string/title_toolbar_all"
         tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_navigation_all_to_navigation_play"
+            app:destination="@id/navigation_play"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
 
 </navigation>
