@@ -11,6 +11,7 @@
 
     <style name="AppTheme.DefaultTextView" parent="android:style/Widget.TextView">
         <item name="android:fontFamily">@font/montserrat_font</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="SplashTheme" parent="AppTheme">
@@ -38,18 +39,19 @@
     </style>
 
     <style name="TextTitleApp" parent="@android:style/TextAppearance">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/montserrat_font</item>
+        <item name="android:textColor">@color/active</item>
     </style>
 
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance">
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="CollapsedAppBar" parent="@android:style/TextAppearance">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:textStyle">normal</item>
     </style>
 

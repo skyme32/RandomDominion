@@ -35,7 +35,7 @@
                     android:fontFamily="@font/montserrat_bold"
                     android:text="@string/desc_scroll"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textSize="18sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/txtViewDesc"
@@ -44,7 +44,7 @@
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
                     android:paddingBottom="20dp"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -72,7 +72,7 @@
                     android:text="@string/desc_scroll"
                     android:textAlignment="center"
                     android:textColor="@color/active"
-                    android:textSize="14sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
             </LinearLayout>

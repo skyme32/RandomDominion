@@ -26,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/active"
-        android:elevation="10dp"
+        android:elevation="4dp"
         android:scrollbarStyle="outsideInset"
         app:itemIconTint="@drawable/bottom_navigation_selector"
         app:itemTextColor="@drawable/bottom_navigation_selector"

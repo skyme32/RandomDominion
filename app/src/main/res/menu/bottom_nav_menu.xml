@@ -3,18 +3,17 @@
 
     <item
         android:id="@+id/navigation_play"
-        android:icon="@drawable/ic_play"
+        android:icon="@drawable/ic_death_star"
         android:title="@string/title_tab_play" />
 
     <item
         android:id="@+id/navigation_category"
-        android:icon="@drawable/ic_category"
+        android:icon="@drawable/ic_content_save"
         android:title="@string/title_tab_cat" />
 
     <item
         android:id="@+id/navigation_all"
-        android:icon="@drawable/ic_all"
+        android:icon="@drawable/ic_cards"
         android:title="@string/title_tab_all" />
-
 
 </menu>

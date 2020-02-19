@@ -1,41 +1,42 @@
 <resources>
     <string name="app_name">Shuf Dominion</string>
-    <string name="action_help">Help</string>
+    <string name="action_help">Ayuda</string>
+    <string name="action_about">Nosotros</string>
     <string name="title_activity_principal">Random Dominion</string>
-    <string name="title_activity_list">Lista of cards</string>
-    <string name="button_allList">Show all cards</string>
-    <string name="button_tagList">Show category cards</string>
-    <string name="button_randomList">Show cards to play</string>
+    <string name="title_activity_list">Lista de cartas</string>
+    <string name="button_allList">Mostrar todas las cartas</string>
+    <string name="button_tagList">Mostrar las cartas por categorias</string>
+    <string name="button_randomList">Mostrar las cartas para jugar</string>
     <string name="error_expansion">ERROR: No has puesto ninguna Expansión</string>
 
     //TABS Bottom home
-    <string name="title_tab_all">Cards</string>
-    <string name="title_tab_cat">Saved</string>
-    <string name="title_tab_play">Playing</string>
+    <string name="title_tab_all">Cartas</string>
+    <string name="title_tab_cat">Guardadas</string>
+    <string name="title_tab_play">Jugar</string>
 
     //TABS Bottom home
-    <string name="title_toolbar_all">All Cards</string>
-    <string name="title_toolbar_cat">Saved Games</string>
-    <string name="title_toolbar_play">Playing Cards</string>
+    <string name="title_toolbar_all">Todas las Cartas</string>
+    <string name="title_toolbar_cat">Juegos Guardados</string>
+    <string name="title_toolbar_play">Jugar las Cartas</string>
 
     //settings
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_settings">Settings</string>
-    <string name="desc_num_cards">Here we will put the number of cards we want random to die for us</string>
-    <string name="dialog_num_cards">Indicate number of Cards"</string>
-    <string name="title_num_cards">Number of cards</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_activity_settings">Configuración</string>
+    <string name="desc_num_cards">Aquí pondremos el numero de cartas que queremos que nos muertre el random</string>
+    <string name="dialog_num_cards">Indicar numero de Cartas</string>
+    <string name="title_num_cards">Numero de cartas</string>
 
     //Headers
     <string name="header_general">General</string>
     <string name="header_advanced">Advanzado</string>
-    <string name="search">Search</string>
+    <string name="search">Buscar</string>
 
     //Dialog
-    <string name="yes">Yes</string>
-    <string name="desc_scroll">Description</string>
-    <string name="title_dialog">Close application</string>
+    <string name="yes">Si</string>
+    <string name="desc_scroll">Descripción</string>
+    <string name="title_dialog">Cerrar la aplicación</string>
     <string name="no">No</string>
-    <string name="desc_dialog">Are you sure you want to close the application?</string>
+    <string name="desc_dialog">¿Estas seguro de que deseas cerrar la aplicación?</string>
 
 
     <!-- Example General settings -->
@@ -100,9 +101,9 @@
     <string name="pref_title_new_message_notifications">New message notifications</string>
     <string name="pref_title_ringtone">Ringtone</string>
     <string name="pref_ringtone_silent">Silent</string>
-    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_title_vibrate">Vibrar</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
-    <string name="title_switch">Change View</string>
+    <string name="title_switch">Canviar vista</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -114,10 +115,8 @@
 
     <!-- Sync Preferences -->
     <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="action_about">Us</string>
+    <string name="attachment_title">" Descargar archivos adjuntos entrantes"</string>
+    <string name="attachment_summary_on">" Descargar automáticamente archivos adjuntos para correos electrónicos entrantes[...] "</string>
+    <string name="attachment_summary_off">Descargar solo archivos adjuntos cuando se solicite manualmente</string>
 
 </resources>
