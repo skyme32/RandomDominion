@@ -3,11 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.skyme32.randomdominion.MainActivity">
 
+
     <item
-        android:id="@+id/action_settings"
-        android:icon="@drawable/ic_cogs"
-        android:orderInCategory="3"
-        android:title="@string/action_settings"
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search"
+        android:orderInCategory="2"
+        app:actionViewClass="android.widget.SearchView"
         app:showAsAction="ifRoom" />
 
 

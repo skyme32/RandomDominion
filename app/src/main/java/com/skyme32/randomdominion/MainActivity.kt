@@ -1,10 +1,13 @@
 package com.skyme32.randomdominion
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.Navigation.findNavController
@@ -14,6 +17,7 @@ import androidx.navigation.navOptions
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.preference.PreferenceManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.skyme32.randomdominion.bean.Card
 import java.lang.Thread.sleep
@@ -22,8 +26,12 @@ import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
+    private var sharedPref: SharedPreferences? = null
+
     companion object {
         var allCcards: ArrayList<Card>? = null
+        var tipyCards: ArrayList<Card>? = null
+        var numCards: Int = 0
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +43,8 @@ class MainActivity : AppCompatActivity() {
 
         // Create all instance of records
         allCcards = onInstanceAll()
+        sharedPref = PreferenceManager.getDefaultSharedPreferences(this)
+        numCards = sharedPref?.getString("ncartas",resources.getString(R.string.default_numCards))?.toInt()!!
 
         // Create all navigataion and actionbar
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
@@ -57,6 +67,11 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        numCards = sharedPref?.getString("ncartas",resources.getString(R.string.default_numCards))?.toInt()!!
     }
 
 

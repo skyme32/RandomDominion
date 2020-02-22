@@ -4,13 +4,16 @@ import android.util.Log
 import com.skyme32.randomdominion.bean.Card
 import java.util.*
 
-class RandomCards(cards: ArrayList<Card>?) {
+class RandomCards(cards: ArrayList<Card>?, numCards: Int) {
 
     private var cards: ArrayList<Card>? = null
+    private var numCards: Int = 0
 
     init {
         this.cards = ArrayList()
         this.cards = cards
+        this.numCards = numCards
+
     }
 
 
@@ -35,6 +38,6 @@ class RandomCards(cards: ArrayList<Card>?) {
      * Function that create arraylist with 10 numbers
      */
     private fun randomToTenNumbers(size: Int): List<Int> {
-        return (0 until size).shuffled().subList(0,10)
+        return (0 until size).shuffled().subList(0,numCards)
     }
 }

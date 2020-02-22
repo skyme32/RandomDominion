@@ -10,7 +10,7 @@ import com.skyme32.randomdominion.factory.RandomCards
 class HomeViewModel : ViewModel() {
 
     private val _text = MutableLiveData<ArrayList<Card>>().apply {
-        var randomCards = RandomCards(MainActivity.allCcards)
+        var randomCards = RandomCards(MainActivity.allCcards, MainActivity.numCards)
         value =  randomCards.getArrayPlayOfCards()
     }
 

@@ -44,7 +44,7 @@ class AllCardsFragment : Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_overflow, menu)
+        inflater.inflate(R.menu.menu_all, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

@@ -25,14 +25,12 @@ class SettingsActivity : AppCompatActivity() {
 
         val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar_set)
         toolbar.setTitleTextAppearance(this,R.style.TextTitleApp)
-        toolbar.title = "Conf"
-
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 
     class SettingsFragment : PreferenceFragmentCompat() {
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-            setPreferencesFromResource(R.xml.root_preferences, rootKey)
+            setPreferencesFromResource(R.xml.pref_general, rootKey)
         }
     }
 

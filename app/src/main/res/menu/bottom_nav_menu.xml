@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/navigation_play"
-        android:icon="@drawable/ic_death_star"
+        android:icon="@drawable/ic_play"
         android:title="@string/title_tab_play" />
 
     <item

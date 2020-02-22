@@ -9,6 +9,11 @@
         <item name="android:textViewStyle">@style/AppTheme.DefaultTextView</item>
     </style>
 
+    <style name="AppThemeBol" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="AppTheme.DefaultTextView" parent="android:style/Widget.TextView">
         <item name="android:fontFamily">@font/montserrat_font</item>
         <item name="android:textSize">20sp</item>
